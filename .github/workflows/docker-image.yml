@@ -17,6 +17,6 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag nikitamadule/task:latest
     - name: Push the Docker image
-      run: docker login -u nikitamadule -p ${{ secrets.TASK }} && docker push nikitamadule/task:latest
+      run: docker login -u nikitamadule -p ${{ secrets.DOCKER_TASK }} && docker push nikitamadule/task:latest
 
 
